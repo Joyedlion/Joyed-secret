@@ -12,7 +12,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "online",
+    status: "dnd",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -25,7 +25,7 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Made with ❤️",
+        name: "Watching Joyedlion",
         // Activity type number (0 = Playing).
         type: 0, 
       },
@@ -201,10 +201,10 @@ export const botConfig = {
   // =========================
   tickets: {
     // Category ID where new tickets are created (null = no forced category).
-    defaultCategory: null,
+    defaultCategory: 1511216207787724900,
 
     // Role IDs allowed to manage/support tickets.
-    supportRoles: [],
+    supportRoles: [1444095111192641668],
 
     // Priority options users/staff can assign.
     priorities: {
@@ -242,7 +242,7 @@ export const botConfig = {
     archiveCategory: null,
 
     // Channel ID where ticket logs are sent.
-    logChannel: null,
+    logChannel: 1444084193159020624,
   },
 
   // =========================
@@ -275,10 +275,10 @@ export const botConfig = {
   // =========================
   birthday: {
     // Role ID given to users on their birthday.
-    defaultRole: null,
+    defaultRole: 1511215584837242930,
 
     // Channel ID where birthday announcements are posted.
-    announcementChannel: null,
+    announcementChannel: 1444086184107184291,
 
     // Timezone used to calculate birthday dates.
     timezone: "UTC",
@@ -365,7 +365,7 @@ export const botConfig = {
     defaultGoodbyeMessage:
       "{user} has left the server. We now have {memberCount} members.",
     // Channel ID for welcome messages.
-    defaultWelcomeChannel: null,
+    defaultWelcomeChannel: 1444083969422397510,
     // Channel ID for goodbye messages.
     defaultGoodbyeChannel: null,
   },
@@ -446,10 +446,10 @@ export const botConfig = {
     tickets: true,
     giveaways: true,
     birthday: true,
-    counter: true,
+    counter: false,
 
     // Security and self-service systems.
-    verification: true,
+    verification: false,
     reactionRoles: true,
     joinToCreate: true,
 
